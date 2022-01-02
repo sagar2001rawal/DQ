@@ -1,0 +1,25 @@
+    
+    }long long minTime(long long a[], long long b[], long long n)
+    {
+       long long  int i,j,tmep,sum=0,sum1=0;
+        for(i=0;i<n;i+=2)
+        {
+            sum+=a[i];
+        }
+        for(i=1;i<n;i+=2)
+        {
+            sum+=b[i];
+        }        for(i=0;i<n;i+=2)
+        {
+            sum1+=b[i];
+        }
+        for(i=1;i<n;i+=2)
+        {
+            sum1+=a[i];
+        }
+        if(sum<sum1)
+        {
+            return sum;
+        }
+        else
+        return sum1;
